@@ -1140,7 +1140,7 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("background2.jpg");
-			background-size: auto,
+			background-size: cover,
  256px 256px;
 			background-position: center,
  center;
@@ -1159,8 +1159,8 @@ input, select, textarea {
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
 			background-image: url("../../images/bg.jpg");
-			background-position: -55px -40px;
-			background-size: 1920px 1140px;  
+			background-position: -80px -40px;
+			background-size: cover;  
 			background-repeat: no-repeat;
 			z-index: 1;
 		}
@@ -1617,7 +1617,7 @@ input, select, textarea {
 					left: 0.875rem;
 					width: 2.25rem;
 					height: 2.25rem;
-					background-size: 14px 14px;
+					background-size: cover;
 				}
 
 		}
