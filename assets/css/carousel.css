@@ -1,0 +1,61 @@
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+    overflow: hidden; /* Ensure content doesn't overflow */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* Ensure the width matches its container */
+}
+
+.carousel-item {
+    min-width: 100%; /* Each item takes up 100% of the carousel width */
+    flex: 0 0 100%; /* Prevent items from resizing */
+    display: flex; /* Allow content alignment */
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Start as hidden */
+    transition: opacity 0.5s ease-in-out; /* Smooth fade effect */
+}
+
+.carousel-item.active {
+    opacity: 1; /* Show active item */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 2rem;
+    line-height: 1;
+    user-select: none;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+.carousel-control:focus {
+    outline: none;
+}
